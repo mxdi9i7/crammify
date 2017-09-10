@@ -1,9 +1,12 @@
 var express = require('express');
 var router = express.Router();
+var mongojs = require('mongojs');
 
 /* GET home page. */
-router.get('/fetch/term/:id', function(req, res, next) {
+router.get('/fetchOne/term/:id', function(req, res, next) {
   res.json({})
 });
-
+router.get('/fetch/terms', function(req, res, next) {
+  res.json({})
+});
 module.exports = router;
